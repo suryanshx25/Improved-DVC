@@ -26,42 +26,42 @@ stages:
       nfiles: 2
     - path: src/data_preprocessing.py
       hash: md5
-      md5: eca603c311af90c494d1820043c54b0e
-      size: 2800
+      md5: dd3565e0650f5884b2a4c3a0b5b8057a
+      size: 3990
     outs:
     - path: data/processed
       hash: md5
-      md5: 942323efba911a42bc5b18b3e6c76c13.dir
-      size: 622285
+      md5: c52f2290e848623bebee2a4c7bcf41e3.dir
+      size: 572633
       nfiles: 2
   feature_engineering:
     cmd: python src/feature_engineering.py
     deps:
     - path: data/processed
       hash: md5
-      md5: 942323efba911a42bc5b18b3e6c76c13.dir
-      size: 622285
+      md5: c52f2290e848623bebee2a4c7bcf41e3.dir
+      size: 572633
       nfiles: 2
     - path: src/feature_engineering.py
       hash: md5
-      md5: cfe63ea3100a57579e5f8d7a4a77dbe4
-      size: 1221
+      md5: 80c1fb601c055818baec44ea4b98bd2f
+      size: 3760
     params:
       params.yaml:
         feature_engineering.max_features: 100
     outs:
     - path: data/features
       hash: md5
-      md5: 53742e7c66a98b979672f32558612a40.dir
-      size: 1118468
+      md5: 745108b02abec28cc53c2d830eee3dda.dir
+      size: 4537114
       nfiles: 2
   model_building:
     cmd: python src/model_building.py
     deps:
     - path: data/features
       hash: md5
-      md5: 53742e7c66a98b979672f32558612a40.dir
-      size: 1118468
+      md5: 745108b02abec28cc53c2d830eee3dda.dir
+      size: 4537114
       nfiles: 2
     - path: src/model_building.py
       hash: md5
@@ -74,15 +74,15 @@ stages:
     outs:
     - path: model.pkl
       hash: md5
-      md5: e2dace46e18fe97a51e8673c95b1124b
-      size: 69718
+      md5: 663dca287c4a754a8752cf3fbad2af67
+      size: 68854
   model_evaluation:
     cmd: python src/model_evaluation.py
     deps:
     - path: model.pkl
       hash: md5
-      md5: e2dace46e18fe97a51e8673c95b1124b
-      size: 69718
+      md5: 663dca287c4a754a8752cf3fbad2af67
+      size: 68854
     - path: src/model_evaluation.py
       hash: md5
       md5: 08b695ef34369042ef7b9deb2182713d
@@ -90,5 +90,5 @@ stages:
     outs:
     - path: metrics.json
       hash: md5
-      md5: def88c8447428fc6d71dd23740e3fae8
-      size: 146
+      md5: 8d9f8d0992f16c1215fd20f674b12110
+      size: 145

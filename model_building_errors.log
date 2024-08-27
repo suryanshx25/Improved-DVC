@@ -1,0 +1,8 @@
+2024-08-26 20:22:37,192 - model_building - ERROR - Error occurred while saving the model: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:22:37,192 - model_building - ERROR - Failed to complete the model building process: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:23:36,080 - model_building - ERROR - Error occurred while saving the model: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:23:36,081 - model_building - ERROR - Failed to complete the model building process: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:25:37,201 - model_building - ERROR - Error occurred while saving the model: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:25:37,201 - model_building - ERROR - Failed to complete the model building process: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:27:03,414 - model_building - ERROR - Error occurred while saving the model: [Errno 13] Permission denied: '/model.pkl'
+2024-08-26 20:27:03,414 - model_building - ERROR - Failed to complete the model building process: [Errno 13] Permission denied: '/model.pkl'
