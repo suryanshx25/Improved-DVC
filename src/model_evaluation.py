@@ -85,7 +85,7 @@ def save_metrics(metrics: dict, file_path: str) -> None:
 def main():
     try:
         clf = load_model('model.pkl')
-        test_data = load_data('data/features/test_bow.csv')
+        test_data = load_data('./data/features/test_tfIdf.csv')
         
         X_test = test_data.iloc[:, :-1].values
         y_test = test_data.iloc[:, -1].values

@@ -1,0 +1,2 @@
+2024-08-27 16:08:31,634 - model_evaluation - ERROR - Unexpected error occurred while loading the data: [Errno 2] No such file or directory: 'data/features/test_bow.csv'
+2024-08-27 16:08:31,634 - model_evaluation - ERROR - Failed to complete the model evaluation process: [Errno 2] No such file or directory: 'data/features/test_bow.csv'
